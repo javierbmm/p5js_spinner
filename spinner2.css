@@ -1,0 +1,68 @@
+html {
+    --p5-color: #ee3567;
+    --p5-center: translateX(30%);
+    --p5-rot1: rotate(90deg);
+    --p5-rot2: rotate(161deg);
+    --p5-rot3: rotate(-125deg);
+    --p5-rot4: rotate(-54deg);
+    --p5-rot5: rotate(19deg);
+}
+
+div {
+    padding: 50px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ee3567;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spinner-2 {
+    width: 70%;
+    height: 70%;
+    display: block;
+    position: relative;
+    animation: spinEaseOut 1.7s ease-out infinite;
+}
+
+@keyframes spinEaseOut {
+    0% {
+        transform: rotate(0);
+    }
+    90%, 100% {
+        transform: rotate(720deg);
+    }
+}
+
+#spinner-2 * {
+    display: block;
+    width: 100%;
+    height: 35%;
+    background-color: var(--p5-color);
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    bottom: 0;
+    transform-origin: right;
+}
+
+#spinner-2 .piece-1 {
+    transform: var(--p5-rot1) var(--p5-center) ;
+}
+
+#spinner-2 .piece-2 {
+    transform: var(--p5-rot2) var(--p5-center);
+}
+
+#spinner-2 .piece-3 {
+    transform: var(--p5-rot3) var(--p5-center);
+}
+
+#spinner-2 .piece-4 {
+    transform: var(--p5-rot4) var(--p5-center);
+}
+
+#spinner-2 .piece-5 {
+    transform: var(--p5-rot5) var(--p5-center);
+}

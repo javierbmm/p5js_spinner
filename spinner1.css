@@ -1,0 +1,20 @@
+#spinner-1 {
+    border: 1px solid red;
+    display: block;
+}
+
+#spinner-1 img {
+    animation: fadeInFloat 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInFloat {
+    from {
+        opacity: 70%;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
